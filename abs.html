@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -133,5 +133,195 @@
     }
 </script>
 
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #about {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: ghostwhite;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            height: auto;
+            background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%),
+                        url("img/background-gd162d3762_1280.png") center center no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        #primary-heading {
+            margin: -42px 4px 30px -2px;
+            color: #fff;
+        }
+
+        .img img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 50%;
+            animation: zoomIn 1s ease-in-out;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .info {
+            width: 100%;
+            max-width: 500px;
+            text-align: left;
+            color: #fff;
+        }
+
+        .info p {
+            margin-bottom: 15px;
+        }
+
+        .info a {
+            color: #fff;
+            margin-right: 15px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .info a:hover {
+            color: #ffc107;
+        }
+    </style>
+</head>
+<body> -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                margin: 0;
+                font-family: 'Arial', sans-serif;
+            }
+    
+            #about {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #f9f9f9;
+            }
+    
+            .container {
+                width: 90%;
+                max-width: 1200px;
+                margin: 0 auto;
+                background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("img/background-gd162d3762_1280.png") center center no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            }
+    
+            #primary-heading {
+                margin: 20px 0;
+                color: #fff;
+                font-size: 2em;
+            }
+    
+            .img img {
+                width: 100%;
+                max-width: 250px;
+                border-radius: 50%;
+                border: 5px solid #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s ease-in-out;
+            }
+    
+            .img img:hover {
+                transform: scale(1.1);
+            }
+    
+            .info {
+                width: 50%;
+                color: #fff;
+            }
+    
+            p {
+                line-height: 1.6;
+            }
+    
+            .social-icons a {
+                color: #fff;
+                margin-right: 15px;
+                font-size: 1.5em;
+                text-decoration: none;
+                transition: color 0.3s ease-in-out;
+            }
+    
+            .social-icons a:hover {
+                color: #ffd700; /* Change to your preferred hover color */
+            }
+        </style>
+    </head>
+    <body>
+    
+    <div id="about">
+        <div class="container">
+            <div class="img">
+                <img src="/images/my.jpg" alt="Profile Image">
+            </div>
+            <div class="info">
+                <h1 id="primary-heading">About Me</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam blanditiis pariatur facere veniam dicta omnis laboriosam provident corporis vitae ullam aperiam, tenetur totam, praesentium et. Commodi ipsa reprehenderit fuga nobis.</p>
+                <div class="social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-github"></a>
+                    <a href="#" class="fa fa-snapchat-ghost"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </body>
+    </html>
+    
 </body>
 </html>
