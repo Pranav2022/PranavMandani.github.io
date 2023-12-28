@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .experience-container {
+            padding: 50px 20px;
+            text-align: center;
+            background: linear-gradient(45deg, #2980b9, #3498db);
+            color: white;
+        }
+
+        .experience-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .experience-card:hover {
+            transform: scale(1.05);
+        }
+
+        .experience-card img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .experience-content {
+            padding: 20px;
+        }
+
+        .experience-title {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #2c3e50; /* Dark blue-gray */
+        }
+
+        .experience-description {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        @media screen and (min-width: 768px) {
+            .experience-container {
+                padding: 80px 20px;
+            }
+
+            .experience-cards-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .experience-card {
+                width: 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="experience-container">
+    <h1>Experience</h1>
+    <div class="experience-cards-container">
+        <div class="experience-card">
+            <img src="company1.jpg" alt="Company 1">
+            <div class="experience-content">
+                <h2 class="experience-title">Software Engineer</h2>
+                <p class="experience-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper mauris eu euismod tincidunt.</p>
+            </div>
+        </div>
+        <div class="experience-card">
+            <img src="company2.jpg" alt="Company 2">
+            <div class="experience-content">
+                <h2 class="experience-title">Web Developer</h2>
+                <p class="experience-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </div>
+        <!-- Add more experience cards as needed -->
+    </div>
+</div>
+
+<script>
+    // Add JavaScript for additional interactivity or animations if needed
+</script>
+
+</body>
+</html>
