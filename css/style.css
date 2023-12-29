@@ -3,6 +3,8 @@
     padding: 0;
     animation: glow 1s linear;
 }
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -13,6 +15,24 @@ body{
     letter-spacing: 2px;
     word-spacing: 1px;
 }
+
+#uplocator{
+    /* background: aqua; */
+    position: fixed;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 0px;
+    margin: 0 18px;
+    right: 32px;
+    bottom: 77px;
+}
+
+
+#uplocator a{
+    text-decoration: none;
+    /* padding: 28px 6px; */
+}
+
 @keyframes glow {
     0%{
         opacity: 0;
@@ -602,60 +622,70 @@ p {
 /* ---------------------------Experience------------------- */
 
 
-
-
-.experience-container {
-    padding: 50px 20px;
+#experience {
+    background-color: #f8f9fa;
+    padding: 80px 0;
     text-align: center;
-    background-color: #333;
-    color: white;
 }
 
-.experience-card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+.section-heading h2 {
+    color: #343a40;
+    font-size: 36px;
+    font-weight: bold;
 }
 
-.experience-card:hover {
-    transform: scale(1.05);
+.section-heading hr {
+    width: 50px;
+    height: 2px;
+    background-color: #343a40;
+    margin: 20px auto;
 }
 
-.experience-card img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
+.experience-item {
+    margin: 40px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.experience-content {
-    padding: 20px;
+.experience-details h3 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
-.experience-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+.company {
+    color: #6c757d;
+    font-size: 18px;
+}
+
+.date {
+    color: #6c757d;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
 .experience-description {
-    font-size: 1rem;
+    color: #495057;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-@media screen and (min-width: 768px) {
-    .experience-container {
-        padding: 80px 20px;
+@media only screen and (max-width: 768px) {
+    .section-heading h2 {
+        font-size: 28px;
     }
 
-    .experience-cards-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+    .experience-details h3 {
+        font-size: 20px;
     }
 
-    .experience-card {
-        width: 45%;
+    .company, .date {
+        font-size: 16px;
+    }
+
+    .experience-description {
+        font-size: 16px;
     }
 }
 
@@ -704,7 +734,7 @@ hr{
 .skill-name {
     width: 300px;
     border: 2px solid white;
-    background: linear-gradient(rgba(216, 35, 38, 0.5), rgba(127, 193, 221, 0.5));
+    background: linear-gradient(rgb(255 113 0 / 50%), rgba(127, 193, 221, 0.5));
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -726,6 +756,16 @@ hr{
     transform: translateY(0);
 }
 
+.skill h2{
+    padding: 24px 0px;
+    color: #007bff;
+}
+
+.skill p{
+    color: rgb(40, 40, 44);
+    font-style: italic;
+    text-align: center;
+}
 .skill-logo img {
     width: 62px;
     border: 3px double lightgray;
@@ -739,4 +779,249 @@ hr{
     background-color: #ffffff;
     box-shadow: 5px 5px 5px rgb(47, 45, 45);
 }
+
+
+/* ------------------Certification--------------------- */
+
+#certification {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#certification p{
+    color: gray;
+}
+
+.section-heading h2 {
+    color: #343a40;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.section-heading hr {
+    width: 50px;
+    height: 2px;
+    background-color: #343a40;
+    margin: 20px auto;
+}
+
+.certification {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+
+.certification-name {
+    height: 300px;
+    width: 300px;
+    border: 3px solid rgb(219, 158, 44);
+    background-color: #212122;
+    margin: 37px 0;
+    overflow: hidden;
+}
+
+.certificate-image {
+    height: 80%;
+}
+
+.certificate-image img {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.certificate-image img:hover {
+    transform: scale(1.04);
+}
+
+.certificate-info {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    margin: 14px 0px 1px 0px;
+}
+
+.certification-name p {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .section-heading h2 {
+        font-size: 28px;
+    }
+}
+
+/* ----------------------Contact Section------------------ */
+
+#contact-us {
+    background-color:#dce3e9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+}
+#heading{
+    padding: 15px 0;
+    margin: 0 0 39px 0;
+    text-align: center;
+}
+.persional-details{
+    width: 100vw;
+}
+.connection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img1 img{
+    width: 21em;
+    box-shadow: 12px 14px 19px grey;
+    border: 2px solid #fffefe;
+}
+
+#contact-us h1{
+    color: #212122;
+}
+
+#contact-us hr{
+    background-color: #007bff;
+}
+
+.persional-details{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+p{
+    margin: 15px 0;
+    color: black;
+}
+
+.persional-details a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+
+.persional-details a::after{
+    content: "";
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    background-color: #9e9e9e;
+}
+.persional-details a:hover::after{
+    background-color: aquamarine;
+}
+
+#contact-us ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0;
+}
+
+#contact-us ul li {
+    padding: 0 5px;
+    list-style: none;
+}
+
+/* form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input, textarea {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(95, 93, 93);
+}
+
+#button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 7px 4px 4px black;
+    transition: all 0.3s ease-in-out;
+}
+
+#button:hover {
+    box-shadow: 0 0 0;
+    background-color: #0056b3;
+} */
+
+
+/* ----------------------Footer Section------------------- */
+
+#footer {
+    height: auto;
+    background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%);
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.links p {
+    font-size: 24px;
+    margin: 0;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.links a:hover {
+    color: #ffd700; /* Change to your desired hover color */
+}
+
+.footer-info p {
+    font-size: 16px;
+    margin: 0;
+}
+
+#heart {
+    color: #ffd700;
+}
+
+@media only screen and (max-width: 768px) {
+    #footer {
+        text-align: center;
+    }
+    
+    .links p {
+        font-size: 18px;
+    }
+    
+    .footer-info p {
+        font-size: 14px;
+    }
+}
+
 

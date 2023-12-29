@@ -1,233 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pranav's Portfolio</title>
-
-     <!-- Google Fonts link -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
-     <!-- Google fonts link -->
-
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-    <!-- Home section -->
-    <div class="home">
-
-        <!-- Navbar -->
-        <div class="navbar" id="myNavbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Experience</a>
-            <a href="#">Specialization</a>
-            <a href="#">Projects</a>
-            <a href="#">Education</a>
-            <a href="#">Certifications</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                &#9776;
-            </a>
-        </div>
-
-        <!-- Info Section -->
-        <div class="info-section">
-            <div class="first-info">
-                <h3>Namaste()  <span id="folding-hands">&#x1f64f;</span> </h3>
-                <h1> <span id="greet">Hello</span> I <span id="m">'m</span> Pranav Mandani</h1>
-                <p class="self">I'm passionate 
-                <span id="post1">Software Engineer</span> |
-                <span id="post2">Web developer</span> |
-                <span id="post3">Problem Solver</span></p>
-                <br>
-                <button>
-                    <a href="#about"> Learn more</a>
-                </button>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pranav's Portfolio</title>
+        <!-- Google Fonts link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+        <!-- Google fonts link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Home section -->
+        <div class="home">
+            <!-- Navbar -->
+            <div class="navbar" id="myNavbar">
+                <a href="#" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Specialization</a>
+                <a href="/projects.html">Projects</a>
+                <!-- <a href="#">Education</a> -->
+                <a href="#certification">Certifications</a>
+                <a href="#contact-us">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    &#9776;
+                </a>
             </div>
-            <div class="poster">
-                <img src="images/cap1.png" alt="">
+            <div id="uplocator">
+                <span style="font-size:50px;">
+                    <a href="#">&#8679;</a>
+                </span>
             </div>
-        </div>
-        <!-- <div class="downward">
+            <!-- Info Section -->
+            <div class="info-section">
+                <div class="first-info">
+                    <h3>
+                        Namaste()
+                        <span id="folding-hands">&#x1f64f;</span>
+                    </h3>
+                    <h1>
+                        <span id="greet">Hello</span>
+                        I
+                        <span id="m">'m</span>
+                        Pranav Mandani
+                    </h1>
+                    <p class="self">
+                        I'm passionate
+                        <span id="post1">Software Engineer</span>
+                        |
+                        <span id="post2">Web developer</span>
+                        |
+                        <span id="post3">Problem Solver</span>
+                    </p>
+                    <br>
+                    <button>
+                        <a href="#about"> Learn more</a>
+                    </button>
+                </div>
+                <div class="poster">
+                    <img src="images/cap1.png" alt="">
+                </div>
+            </div>
+            <!-- <div class="downward">
         <h3>Learn more</h3>
         <img src="" alt="">
     </div> -->
-    </div>
-
-    <!-- about-section -->
-
-    <div id="about">
-        <div class="container">
-            <div class="img">
-                <img src="images/my.jpg" alt="Profile Image">
-            </div>
-            <div class="info">
-                <h1 id="primary-heading">About <span id="me">me</span></h1>
-                <p>Welcome to my portfolio! I am a passionate software engineer with a strong foundation in programming languages such as Java, Python, 
+        </div>
+        <!-- about-section -->
+        <div id="about">
+            <div class="container">
+                <div class="img">
+                    <img src="images/my.jpg" alt="Profile Image">
+                </div>
+                <div class="info">
+                    <h1 id="primary-heading">
+                        About
+                        <span id="me">me</span>
+                    </h1>
+                    <p>
+                        Welcome to my portfolio! I am a passionate software engineer with a strong foundation in programming languages such as Java, Python, 
                     C++. 
                     I specialize in web development (HTML, CSS, JavaScript), database management (DBMS, SQL, MySQL), and version control (Git, GitHub). 
                     My ambition for machine learning, proficiency with the Django framework, and strong problem-solving skills make me a valuable asset.
-                    Let's connect and explore how I can contribute to organizational growth.</p>
+                    Let's connect and explore how I can contribute to organizational growth.
+                    </p>
+                    <p>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/pranav-mandani-5668a61ab/" class="fa fa-linkedin" target="_blank"></a>
+                        <a href="pranavmandani20@gmail.com" class="fa fa-instagram"></a>
+                        <a href="https://github.com/Pranav2022" target="_blank" class="fa fa-github"></a>
+                        <a href="#" class="fa fa-snapchat-ghost"></a>
+                    </p>
+                    <!-- this is it -->
+                </div>
+            </div>
+        </div>
+        <div class="summary-container">
+            <!-- <h1>Summary</h1> -->
+            <div class="summary-cards-container">
+                <div class="summary-card">
+                    <div class="summary-content">
+                        <h2 class="summary-title">Projects</h2>
+                        <p class="summary-number">10+</p>
+                        <p class="summary-label">Completed</p>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-content">
+                        <h2 class="summary-title">Certifications</h2>
+                        <p class="summary-number">10+</p>
+                        <p class="summary-label">Earned</p>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-content">
+                        <h2 class="summary-title">Experience</h2>
+                        <p class="summary-number">3</p>
+                        <p class="summary-label">Months</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="experience">
+            <div class="section-heading">
+                <h2>Experience</h2>
+                <hr>
+            </div>
+            <div class="experience-item">
+                <div class="experience-details">
+                    <h3>Student Intern</h3>
+                    <p class="company">Persistent Systems</p>
+                    <p class="date">July 2022 - August 2022</p>
+                </div>
+                <p class="experience-description">
+                    During the Martian Internship Program 2022 at Persistent Systems in Pune, India, I showcased exceptional coding abilities through active participation in coding competitions. This experience provided invaluable practical exposure to key areas of computer science, including programming, operating systems, computer networks, and DBMS, highlighting my innovative problem-solving skills and ability to thrive under pressure.
+                </p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-details">
+                    <h3>Web Developer Intern</h3>
+                    <p class="company">Oasis Infobyte</p>
+                    <p class="date">January 2022 - Feburary 2022</p>
+                </div>
+                <p class="experience-description">
+                    Worked on cutting-edge projects, collaborating with cross-functional teams to deliver high-quality software solutions. Led the development of key features, improving system performance and user experience.
+                </p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-details">
+                    <h3>Data Science and Bussiness Analytics</h3>
+                    <p class="company">The Sparks Foundation</p>
+                    <p class="date">Feburary 2022 - March 2022</p>
+                </div>
+                <p class="experience-description">
+                    As a Data Science Intern at The Sparks Foundation, I played a crucial role in the data collection and cleaning process, utilizing SQL queries and scripts to extract and transform data from diverse sources. Additionally, I conducted exploratory data analysis, uncovering valuable insights and identifying patterns and relationships within extensive datasets.
+                </p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-details">
+                    <h3>Web Developer Intern</h3>
+                    <p class="company">The Sparks Foundation</p>
+                    <p class="date">November 2021 - December 2021</p>
+                </div>
+                <p class="experience-description">
+                    As a Web Developer Intern at The Sparks Foundation India in 2021, I led the end-to-end development and design of a charity organization's website, ensuring a seamless user experience. I adeptly integrated secure payment gateways for online donations, managed deployment using Git, and collaborated with a skilled team to enhance the website's visual appeal and functionality through CSS, HTML, JavaScript, and Bootstrap.
+                </p>
+            </div>
+            <!-- Add more experience items as needed -->
+        </div>
+        <div id="skills">
+            <div class="heading-name">
+                <h1 class="secondary-heading">Specializations</h1>
+                <hr>
+                <p>Here are some areas I'm passionate about, and I have relevant skills in:</p>
+            </div>
+            <div class="skill">
+                <!-- Repeat the following skill-name structure for each skill -->
+                <div class="skill-name" id="skill-1">
+                    <div class="skill-logo" id="logo-1">
+                        <img src="/images/programming.png" alt="Web Development">
+                        <br>
+                        <h2>Web Development</h2>
+                    </div>
+                    <div class="info-1" id="info-1">
+                        <p>Passionate about creating dynamic and user-friendly web applications. Experienced in building projects that showcase a blend of creativity and functionality.Skilled in creating responsive and user-friendly web applications with expertise in HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+                <div class="skill-name" id="skill-2">
+                    <div class="skill-logo" id="logo-2">
+                        <img src="images/java.png" alt="Coding and Problem Solving (DSA)">
+                        <br>
+                        <h2>Coding and Problem Solving (DSA)</h2>
+                    </div>
+                    <div class="info-1" id="info-2">
+                        <p>Proficient in Python, Java, and C++. Successfully tackled complex problem-solving challenges through Data Structures and Algorithms, contributing to various projects.</p>
+                    </div>
+                </div>
+                <div class="skill-name" id="skill-3">
+                    <div class="skill-logo" id="logo-3">
+                        <img src="/images/django.png" alt="Django Framework">
+                        <br>
+                        <h2>Django Framework</h2>
+                    </div>
+                    <div class="info-1" id="info-1">
+                        <p>Developed TextUtils, a powerful data analysis tool, and an e-shopping website for seamless product purchasing. Well-versed in leveraging Django for robust backend solutions.</p>
+                    </div>
+                </div>
+                <div class="skill-name" id="skill-1">
+                    <div class="skill-logo" id="logo-1">
+                        <img src="/images/github.png" alt="Git/Github Version Control">
+                        <br>
+                        <h2>Git/Github Version Control</h2>
+                    </div>
+                    <div class="info-1" id="info-1">
+                        <p>Expertise in version control using Git and Github for efficient project management. Ensured collaboration and seamless integration of code changes in various projects.</p>
+                    </div>
+                </div>
+                <div class="skill-name" id="skill-1">
+                    <div class="skill-logo" id="logo-1">
+                        <img src="images/code.png" alt="Software Development Tools">
+                        <br>
+                        <h2>Software Development Tools</h2>
+                    </div>
+                    <div class="info-1" id="info-1">
+                        <p>Proficient in using development tools like PyCharm, VSCode, and IntelliJ IDEA for efficient coding and project development. Achieved seamless integration with industry-standard IDEs.</p>
+                    </div>
+                </div>
+                <div class="skill-name" id="skill-6">
+                    <div class="skill-logo" id="logo-1">
+                        <img src="/images/database-storage.png" alt="Database Managment Systems">
+                        <br>
+                        <h2>Database Management System</h2>
+                    </div>
+                    <div class="info-1" id="info-6">
+                        <p>Skilled in SQL and MySQL, with a certification in MariaDB from Infosys. Managed databases effectively, ensuring data integrity and optimal performance.</p>
+                    </div>
+                </div>
+                <div class="skill-name" id="skill-6">
+                    <div class="skill-logo" id="logo-1">
+                        <img src="images/coding.png" alt="Machine Learning">
+                        <br>
+                        <h2>Machine Learning</h2>
+                    </div>
+                    <div class="info-1" id="info-6">
+                        <p>Explored the realms of machine learning, applying algorithms to derive meaningful insights. Contributed to projects that showcase the practical application of machine learning concepts. Experience in developing and implementing machine learning models for predictive analytics and pattern recognition.</p>
+                    </div>
+                </div>
+                <div class="skill-name" id="skill-6">
+                    <div class="skill-logo" id="logo-1">
+                        <img src="images/learning.png" alt="Data Science">
+                        <br>
+                        <h2>Data Science</h2>
+                    </div>
+                    <div class="info-1" id="info-6">
+                        <p>Engaged in data collection, cleaning, and exploratory data analysis. Gained hands-on experience in uncovering patterns and deriving insights from large datasets. Proficient in extracting valuable insights from complex datasets using advanced data analysis techniques.</p>
+                    </div>
+                </div>
+                <!-- End of skill-name structure -->
+            </div>
+        </div>
+        <div id="certification" class="section">
+            <div class="section-heading">
+                <h2>Certifications</h2>
+                <hr>
+                <p>Explore my certifications earned while honing my skills.</p>
+            </div>
+            <div class="certification">
+                <!-- Repeat the following certification-name structure for each certification -->
+                <div class="certification-name" id="certificate-1">
+                    <div class="certificate-image">
+                        <img src="Certificate/JavaProgramming.PNG" alt="Programming for everybody">
+                    </div>
+                    <div class="certificate-info">
+                        <p>Java Certification</p>
+                    </div>
+                </div>
+                <div class="certification-name" id="certificate-1">
+                    <div class="certificate-image">
+                        <img src="Certificate/PythonT.JPG" alt="Programming for everybody">
+                    </div>
+                    <div class="certificate-info">
+                        <p>Python Training</p>
+                    </div>
+                </div>
+                <div class="certification-name" id="certificate-1">
+                    <div class="certificate-image">
+                        <img src="Certificate/MySQL.JPG" alt="Programming for everybody">
+                    </div>
+                    <div class="certificate-info">
+                        <p>MySQL and PHP  Training</p>
+                    </div>
+                </div>
+                <div class="certification-name" id="certificate-1">
+                    <div class="certificate-image">
+                        <img src="Certificate/PostgreSQL.JPG" alt="Programming for everybody">
+                    </div>
+                    <div class="certificate-info">
+                        <p>PostgreSQL Training</p>
+                    </div>
+                </div>
+                <div class="certification-name" id="certificate-2">
+                    <div class="certificate-image">
+                        <img src="Certificate/advance_cpp.PNG" alt="advance_cpp">
+                    </div>
+                    <div class="certificate-info">
+                        <p>advance_cpp</p>
+                    </div>
+                </div>
+                <div class="certification-name" id="certificate-1">
+                    <div class="certificate-image">
+                        <img src="Certificate/Ruby.JPG" alt="Programming for everybody">
+                    </div>
+                    <div class="certificate-info">
+                        <p>Ruby Training</p>
+                    </div>
+                </div>
+                <div class="certification-name" id="certificate-1">
+                    <div class="certificate-image">
+                        <img src="Certificate/RTraining.JPG" alt="Programming for everybody">
+                    </div>
+                    <div class="certificate-info">
+                        <p>R Training</p>
+                    </div>
+                </div>
+                <div class="certification-name" id="certificate-1">
+                    <div class="certificate-image">
+                        <img src="Certificate/CyberSecurity.JPG" alt="Programming for everybody">
+                    </div>
+                    <div class="certificate-info">
+                        <p>Cyber Security by Cisco</p>
+                    </div>
+                </div>
+                <div class="certification-name" id="certificate-3">
+                    <div class="certificate-image">
+                        <img src="Certificate/DB_operation_usingPython.PNG" alt="DB_operation_usingPython">
+                    </div>
+                    <div class="certificate-info">
+                        <p>DB_operation_usingPython</p>
+                    </div>
+                </div>
+                <div class="certification-name" id="certificate-4">
+                    <div class="certificate-image">
+                        <img src="Certificate/googleCloud.PNG" alt="googleCloud">
+                    </div>
+                    <div class="certificate-info">
+                        <p>googleCloud</p>
+                    </div>
+                </div>
+                <div class="certification-name" id="certificate-5">
+                    <div class="certificate-image">
+                        <img src="Certificate/Introduction_To_Ai.PNG" alt="Introduction_To_Ai">
+                    </div>
+                    <div class="certificate-info">
+                        <p>Introduction_To_Ai</p>
+                    </div>
+                </div>
+                <div class="certification-name" id="certificate-6">
+                    <div class="certificate-image">
+                        <img src="Certificate/Introduction_to_ds.PNG" alt="Introduction_to_ds">
+                    </div>
+                    <div class="certificate-info">
+                        <p>Introduction_to_ds</p>
+                    </div>
+                </div>
+                <div class="certification-name" id="certificate-7">
+                    <div class="certificate-image">
+                        <img src="Certificate/Latex_certificate.PNG" alt="Latex_certificate">
+                    </div>
+                    <div class="certificate-info">
+                        <p>Latex_certificate</p>
+                    </div>
+                </div>
+                <div class="certification-name" id="certificate-8">
+                    <div class="certificate-image">
+                        <img src="Certificate/matlab_certificate.PNG" alt="matlab_certificate">
+                    </div>
+                    <div class="certificate-info">
+                        <p>matlab_certificate</p>
+                    </div>
+                </div>
+                <div class="certification-name" id="certificate-9">
+                    <div class="certificate-image">
+                        <img src="Certificate/MLandIP.PNG" alt="Machine-Learning">
+                    </div>
+                    <div class="certificate-info">
+                        <p>Machine-Learning and Image-Proocessing</p>
+                    </div>
+                </div>
+                <div class="certification-name" id="certificate-9">
+                    <div class="certificate-image">
+                        <img src="Certificate/Programming_fundamentals.PNG" alt="Programming_fundamentals">
+                    </div>
+                    <div class="certificate-info">
+                        <p>Programming_fundamentals</p>
+                    </div>
+                </div>
+                <div class="certification-name" id="certificate-9">
+                    <div class="certificate-image">
+                        <img src="Certificate/train_india.PNG" alt="train_india">
+                    </div>
+                    <div class="certificate-info">
+                        <p>train_India</p>
+                    </div>
+                </div>
+                <div class="certification-name" id="certificate-1">
+                    <div class="certificate-image">
+                        <img src="Certificate/Capture.PNG" alt="Programming for everybody">
+                    </div>
+                    <div class="certificate-info">
+                        <p>Programming for everybody(Python)</p>
+                    </div>
+                </div>
+                <!-- End of certification-name structure -->
+            </div>
+        </div>
+        <div id="contact-us">
+            <div class="heading-name" id="heading">
+                <h1 class="secondary-name">Contact-me</h1>
+                <hr>
+                <p>Feel free to reach out. I'd love to connect with you!</p>
+            </div>
+            <div class="persional-details">
+                
+                <div class="connection">
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/pranav-mandani-5668a61ab/" target="_blank">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="#">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Pranav2022" target="_blank">Github</a>
+                        </li>
+                    </ul>
+                    <p>send me an email at</p>
+                    <p class="para">
+                        <a href="mailto:pranavmandani20@gmail.com" id="link">pranavmandani20@gmail.com</a>
+                    </p>
+                    <p>Let's talk</p>
+                </div>
+                
+                <div class="img1">
+                    <img src="images/images.jpg" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="links">
                 <p>
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-github"></a>
+                    <a href="https://www.linkedin.com/in/pranav-mandani-5668a61ab/" class="fa fa-linkedin" target="_blank"></a>
+                    <a href="pranavmandani20@gmail.com" class="fa fa-instagram"></a>
+                    <a href="https://github.com/Pranav2022" target="_blank" class="fa fa-github"></a>
                     <a href="#" class="fa fa-snapchat-ghost"></a>
                 </p>
-                <!-- this is it -->
+            </div>
+            <div class="footer-info">
+                <p>
+                    &copy; Portfolio Website | Designed with
+                    <span id="heart">&hearts;</span>
+                    by Pranav Mandani
+                </p>
             </div>
         </div>
-    </div>
-
-    <div class="summary-container">
-        <!-- <h1>Summary</h1> -->
-        <div class="summary-cards-container">
-            <div class="summary-card">
-                <div class="summary-content">
-                    <h2 class="summary-title">Projects</h2>
-                    <p class="summary-number">10</p>
-                    <p class="summary-label">Completed</p>
-                </div>
-            </div>
-            <div class="summary-card">
-                <div class="summary-content">
-                    <h2 class="summary-title">Certifications</h2>
-                    <p class="summary-number">5</p>
-                    <p class="summary-label">Earned</p>
-                </div>
-            </div>
-            <div class="summary-card">
-                <div class="summary-content">
-                    <h2 class="summary-title">Experience</h2>
-                    <p class="summary-number">3</p>
-                    <p class="summary-label">Years</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="experience-container">
-        <h1>Experience</h1>
-        <div class="experience-cards-container">
-            <div class="experience-card">
-                <img src="company1.jpg" alt="Company 1">
-                <div class="experience-content">
-                    <h2 class="experience-title">Software Engineer</h2>
-                    <p class="experience-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper mauris eu euismod tincidunt.</p>
-                </div>
-            </div>
-            <div class="experience-card">
-                <img src="company2.jpg" alt="Company 2">
-                <div class="experience-content">
-                    <h2 class="experience-title">Web Developer</h2>
-                    <p class="experience-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                </div>
-            </div>
-
-            <div class="experience-card">
-                <img src="company1.jpg" alt="Company 3">
-                <div class="experience-content">
-                    <h2 class="experience-title">Software Engineer</h2>
-                    <p class="experience-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper mauris eu euismod tincidunt.</p>
-                </div>
-            </div>
-
-            <div class="experience-card">
-                <img src="company1.jpg" alt="Company 4">
-                <div class="experience-content">
-                    <h2 class="experience-title">Software Engineer</h2>
-                    <p class="experience-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper mauris eu euismod tincidunt.</p>
-                </div>
-            </div>
-            <!-- Add more experience cards as needed -->
-        </div>
-    </div>
-
-
-    <div id="skills">
-        <div class="heading-name">
-            <h1 class="secondary-heading">Specializations</h1>
-            <hr>
-            <p>Here are some areas I'm passionate about, and I have relevant skills in:</p>
-        </div>
-        <div class="skill">
-            <!-- Repeat the following skill-name structure for each skill -->
-            <div class="skill-name" id="skill-1">
-                <div class="skill-logo" id="logo-1">
-                    <img src="img/data.png" alt="Data Science">
-                    <br>
-                    <p>Data Science</p>
-                </div>
-                <div class="info-1" id="info-1">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                </div>
-            </div>
-
-            <div class="skill-name" id="skill-1">
-                <div class="skill-logo" id="logo-1">
-                    <img src="img/data.png" alt="Data Science">
-                    <br>
-                    <p>Data Science</p>
-                </div>
-                <div class="info-1" id="info-1">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                </div>
-            </div>
-
-            <div class="skill-name" id="skill-1">
-                <div class="skill-logo" id="logo-1">
-                    <img src="img/data.png" alt="Data Science">
-                    <br>
-                    <p>Data Science</p>
-                </div>
-                <div class="info-1" id="info-1">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                </div>
-            </div>
-
-            <div class="skill-name" id="skill-1">
-                <div class="skill-logo" id="logo-1">
-                    <img src="img/data.png" alt="Data Science">
-                    <br>
-                    <p>Data Science</p>
-                </div>
-                <div class="info-1" id="info-1">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                </div>
-            </div>
-
-            <div class="skill-name" id="skill-1">
-                <div class="skill-logo" id="logo-1">
-                    <img src="img/data.png" alt="Data Science">
-                    <br>
-                    <p>Data Science</p>
-                </div>
-                <div class="info-1" id="info-1">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                </div>
-            </div>
-
-            <div class="skill-name" id="skill-6">
-                <div class="skill-logo" id="logo-1">
-                    <img src="img/data.png" alt="Data Science">
-                    <br>
-                    <p>Data Science</p>
-                </div>
-                <div class="info-1" id="info-6">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                </div>
-            </div>
-            <!-- End of skill-name structure -->
-        </div>
-    </div>
-
-    
-    <script src="js/script.js"></script>
-</body>
+        <script src="js/script.js"></script>
+    </body>
 </html>

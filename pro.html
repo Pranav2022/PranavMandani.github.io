@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #projects {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+        }
+        
+        .project-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .project {
+            width: calc(33.33% - 20px);
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .project:hover {
+            transform: translateY(-10px);
+        }
+        
+        h3 {
+            margin-top: 0;
+        }
+        
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+        
+        a:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="projects" class="section">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Projects</h2>
+                <hr>
+                <p>Check out some of my latest projects on GitHub.</p>
+            </div>
+    
+            <div class="project-list">
+                <div class="project" id="project1">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="https://github.com/your-username/project1" target="_blank">GitHub Link</a>
+                </div>
+    
+                <div class="project" id="project2">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="https://github.com/your-username/project2" target="_blank">GitHub Link</a>
+                </div>
+    
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
