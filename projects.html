@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pranav's Portfolio</title>
+        <!-- Google Fonts link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+        <!-- Google fonts link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/project.css">
+    </head>
+    <body>
+        <!-- Home section -->
+        <!-- <div class="home"> -->
+        <!-- Navbar -->
+        <div class="navbar" id="myNavbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="index.html#skills">Specialization</a>
+            <a href="#">Projects</a>
+            <!-- <a href="#">Education</a> -->
+            <a href="index.html#certification">Certifications</a>
+            <a href="index.html#contact-us">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                &#9776;
+            </a>
+        </div>
+        <div id="uplocator">
+            <span style="font-size:50px;">
+                <a href="#">&#8679;</a>
+            </span>
+        </div>
+        <div id="slider-container">
+            <div class="slide" id="slide1">
+                <img src="images/SpotifyClone.jpg" alt="SpotifyClone" srcset="">
+            </div>
+            <div class="slide" id="slide2">
+                <img src="images/RAS.jpg" alt="Railway-Announcement-System">
+            </div>
+            <div class="slide" id="slide3">
+                <img src="images/forum.png" alt="Forum" srcset="">
+            </div>
+            <div class="slide" id="slide4">
+                <img src="images/OSA.jpg" alt="OSA" srcset="">
+            </div>
+            <div class="slide" id="slide5">
+               <img src="images/Krishi.jpg" alt="Krishi" srcset="">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        <div id="projects" class="section">
+            <div class="container1">
+                <div class="section-heading">
+                    <h2>Projects</h2>
+                    <hr>
+                    <p>Check out some of my latest projects on GitHub.</p>
+                </div>
+                <div class="project-list">
+                    <div class="project" id="project1">
+                        <h3>TextUtils</h3>
+                        <p>
+                            I developed a robust data analysis tool, leveraging the power of Python's Django framework to facilitate efficient backend data manipulation. The tool features a user-friendly interface designed for intuitive data handling, providing a seamless experience. Users can benefit from a range of features, including punctuation removal, lowercase and uppercase transformations, capitalization of each word, elimination of unwanted whitespaces, and the removal of extra newlines. These capabilities collectively enhance the tool's functionality, making data manipulation and analysis more accessible and user-friendly.
+                            also in updation mode adding more features in future work.
+                        </p>
+                        <a href="https://github.com/Pranav2022/textUtils" target="_blank">GitHub Link</a>
+                    </div>
+                    <div class="project" id="project2">
+                        <h3>Obstructive Sleep Apnea (OSA)</h3>
+                        <p>
+                            Obstructive Sleep Apnea (OSA), a prevalent sleep disorder, is characterized by repeated interruptions in breathing during sleep, leading to momentary awakenings. In March 2022, I played a pivotal role in a 4-person team, contributing to the design and implementation of an OSA application. Leveraging Python, Flask, HTML, CSS, and JavaScript, along with machine learning using Random Forest with 95% accuracy and a 30% recall rate, the application empowers users to monitor sleep patterns and identify potential indicators of OSA. Additionally, in a separate initiative with a 3-person team, we successfully developed a SmartCare System, employing similar technologies and machine learning methodologies to analyze sleep patterns and detect signs of OSA, further enhancing our commitment to sleep health.
+                        </p>
+                        <a href="https://github.com/Pranav2022/Obstructive-Sleep-Apnea" target="_blank">GitHub Link</a>
+                    </div>
+                    <div class="project" id="project2">
+                        <h3>Intelligent Latex equation Sequencer using vector mask overlay and Localised Composition analysis</h3>
+                        <p>Led a team of 4 selected students, out of 250 interviewed, for an innovative project at TextMover Labs LLC—developing an Intelligent Latex Equation Sequencer. This educational application employs interactive animations to teach mathematical derivations virtually. The system comprises three modules: the first converts Latex equations to SVG images, the second breaks down SVG images using a CNN for element recognition, and the third animates each recognized element. Achieved a 95% accuracy rate with a CNN algorithm for handwritten character identification, and seamlessly integrated advanced animation techniques using Docker, ReactJs, nodeJs, and CNN for an enhanced visual presentation of mathematical derivations.</p>
+                        <a href="https://github.com/Pranav2022/Latex-Code-to-SVG-Images-with-Effective-Animation" target="_blank">GitHub Link</a>
+                    </div>
+                    <div class="project" id="project2">
+                        <h3>Railway Announcement System</h3>
+                        <p>
+                            Developed a sophisticated Railway Announcement System using Python, this project streamlines the process of creating voice-based announcements for trains in various languages. The system boasts an intuitive user interface designed for station personnel, enabling easy input and management of announcement content—making it accessible even to non-technical staff. The project's core functionality includes generating automatic announcements for trains, supporting multiple stations seamlessly. With features such as generating city names, train details, and platform numbers in different languages, the system significantly reduces the time and effort required for announcement creation, ensuring efficient communication across railway networks
+                        </p>
+                        <a href="https://github.com/Pranav2022/Railway-Announcement-software-system" target="_blank">GitHub Link</a>
+                    </div>
+                    <div class="project" id="project2">
+                        <h3>Krishi - An interface for Farmers</h3>
+                        <p>Krishi is a comprehensive web application designed to facilitate the agricultural community by providing a seamless online platform for buying and selling agricultural products. Developed using HTML, CSS, JavaScript, PHP, and MySQL, Krishi offers a user-friendly interface for farmers to sign up, log in, and create detailed product listings, complete with photos, pricing, and discounts. Farmers can enhance their engagement through personalized profiles, while also gaining valuable insights into farming techniques and cutting-edge technologies through the integrated blog feature. This platform empowers users to share their expertise by contributing blogs and comments, fostering a collaborative community where farmers can find solutions to agricultural challenges. Additionally, consumers can easily sign up, browse products, and make secure online purchases, contributing to the growth and efficiency of the agricultural ecosystem.</p>
+                        <a href="https://github.com/Pranav2022/Krishi1" target="_blank">GitHub Link</a>
+                    </div>
+                    <div class="project" id="project2">
+                        <h3>
+                            Forum : An discussion platform
+                        </h3>
+                            <p>
+                                A forum is an online discussion platform where users can engage in conversations by posting queries, sharing information, and discussing various topics within specific categories. In the context of the described web application created using PHP, HTML, CSS, and JavaScript, this forum allows users to sign up, log in, ask questions, and comment on threads. It is a dynamic space where individuals can seek assistance, share knowledge, and collaborate on problem-solving. The application, still in progress, focuses on maintaining threaded discussions, providing a structured environment for users to explore and contribute. While platforms like Quora offer similar functionalities, this forum caters to a specific niche and aims to provide a user-friendly experience for meaningful interactions.
+                            </p>
+                            <a href="https://github.com/Pranav2022/forum" target="_blank">GitHub Link</a>
+                        </div>
+                        <div class="project" id="project2">
+                            <h3>Spotify clone</h3>
+                            <p>The Spotify clone project is a web application crafted with HTML, CSS, and JavaScript, replicating the core features of the original Spotify platform. It offers a seamless music streaming experience, allowing users to browse through an extensive library of songs, albums, and playlists. The user-friendly interface includes features like play, pause, skip, and volume control, ensuring an intuitive playback experience. Additionally, users can explore curated playlists, view artist details, and enjoy responsive design for a delightful experience across various devices. The clone successfully emulates Spotify's aesthetic, bringing a familiar and engaging music discovery platform to users.</p>
+                            <a href="https://github.com/Pranav2022/SpotifyClone.github.io" target="_blank">GitHub Link</a>
+                        </div>
+                        <!-- <div class="project" id="project2">
+                            <h3>Project 2</h3>
+                            <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="https://github.com/your-username/project2" target="_blank">GitHub Link</a>
+                        </div> -->
+                        <!-- Add more projects as needed -->
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="links">
+                    <p>
+                        <a href="https://www.linkedin.com/in/pranav-mandani-5668a61ab/" class="fa fa-linkedin" target="_blank"></a>
+                        <a href="pranavmandani20@gmail.com" class="fa fa-instagram"></a>
+                        <a href="https://github.com/Pranav2022" target="_blank" class="fa fa-github"></a>
+                        <a href="#" class="fa fa-snapchat-ghost"></a>
+                    </p>
+                </div>
+                <div class="footer-info">
+                    <p>
+                        &copy; Portfolio Website | Designed with
+                        <span id="heart">&hearts;</span>
+                        by Pranav Mandani
+                    </p>
+                </div>
+            </div>
+            <script src="js/script.js"></script>
+        </body>
+    </html>

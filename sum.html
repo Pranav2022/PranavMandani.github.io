@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .summary-container {
+            padding: 50px 20px;
+            text-align: center;
+            background: linear-gradient(45deg, #2980b9, #3498db);
+            color: white;
+        }
+
+        .summary-item {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .summary-item:hover {
+            transform: scale(1.05);
+        }
+
+        .summary-content {
+            padding: 20px;
+        }
+
+        .summary-title {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #2c3e50; /* Dark blue-gray */
+        }
+
+        .summary-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ecf0f1; /* Light gray */
+        }
+
+        .summary-description {
+            font-size: 1.1rem;
+            color: #ecf0f1; /* Light gray */
+        }
+
+        @media screen and (min-width: 768px) {
+            .summary-container {
+                padding: 80px 20px;
+            }
+
+            .summary-items-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .summary-item {
+                width: 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="summary-container">
+    <h1>Summary</h1>
+    <div class="summary-items-container">
+        <div class="summary-item">
+            <div class="summary-content">
+                <h2 class="summary-title">Projects Completed</h2>
+                <p class="summary-number">15+</p>
+                <p class="summary-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="summary-item">
+            <div class="summary-content">
+                <h2 class="summary-title">Certifications Earned</h2>
+                <p class="summary-number">5</p>
+                <p class="summary-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+            </div>
+        </div>
+        <div class="summary-item">
+            <div class="summary-content">
+                <h2 class="summary-title">Years of Experience</h2>
+                <p class="summary-number">3+</p>
+                <p class="summary-description">Proin ullamcorper mauris eu euismod tincidunt.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Add JavaScript for additional interactivity or animations if needed
+</script>
+
+</body>
+</html>
