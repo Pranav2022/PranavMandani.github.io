@@ -1,471 +1,710 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pranav's Portfolio</title>
-        <!-- Google Fonts link -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
-        <!-- Google fonts link -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <!-- Home section -->
-        <div class="home">
-            <!-- Navbar -->
-            <div class="navbar" id="myNavbar">
-                <a href="#" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Specialization</a>
-                <a href="projects.html">Projects</a>
-                <!-- <a href="#">Education</a> -->
-                <a href="#certification">Certifications</a>
-                <a href="#contact-us">Contact</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    &#9776;
-                </a>
-            </div>
-            <div id="uplocator">
-                <span style="font-size:50px;">
-                    <a href="#">&#8679;</a>
-                </span>
-            </div>
-            <!-- Info Section -->
-            <div class="info-section">
-                <div class="first-info">
-                    <h3>
-                        Namaste()
-                        <span id="folding-hands">&#x1f64f;</span>
-                    </h3>
-                    <h1>
-                        <span id="greet">Hello</span>
-                        I
-                        <span id="m">'m</span>
-                        Pranav Mandani
-                    </h1>
-                    <p class="self">
-                        I'm passionate
-                        <span id="post1">Software Engineer</span>
-                        |
-                        <span id="post2">Web developer</span>
-                        |
-                        <span id="post3">Problem Solver</span>
-                    </p>
-                    <br>
-                    <button>
-                        <a href="#about"> Learn more</a>
-                    </button>
-                </div>
-                <div class="poster">
-                    <img src="images/cap1.png" alt="">
-                </div>
-            </div>
-            <!-- <div class="downward">
-        <h3>Learn more</h3>
-        <img src="" alt="">
-    </div> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pranav Mandani | Software Engineer | Java, Spring Boot, AWS</title>
+    <meta
+      name="description"
+      content="Pranav Mandani is a Software Engineer in Pune specializing in Java, Spring Boot, REST APIs, SQL, AWS, and modern web applications. Explore experience, TextMover project, certifications, and contact details."
+    />
+    <meta
+      name="keywords"
+      content="Pranav Mandani, Software Engineer, Java, Spring Boot, REST API, AWS, SQL, Vue.js, Backend"
+    />
+    <meta name="author" content="Pranav Mandani" />
+    <meta property="og:title" content="Pranav Mandani | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Software Engineer building reliable backend systems, APIs, and modern web applications with Java, Spring Boot, SQL, AWS, and Vue.js."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/my.jpg" />
+    <meta
+      property="og:url"
+      content="https://pranav2022.github.io/Pranav2025-Portfolio.github.io/"
+    />
+    <link
+      rel="canonical"
+      href="https://pranav2022.github.io/Pranav2025-Portfolio.github.io/"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="home">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Pranav Mandani home">
+          <span class="brand-mark">PM</span>
+          <span class="brand-text">Pranav Mandani</span>
+        </a>
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Toggle navigation menu"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#home" data-nav-link>Home</a>
+          <a href="#about" data-nav-link>About</a>
+          <a href="#experience" data-nav-link>Experience</a>
+          <a href="#skills" data-nav-link>Skills</a>
+          <a href="#projects" data-nav-link>Projects</a>
+          <a href="#certification" data-nav-link>Certifications</a>
+          <a href="#education" data-nav-link>Education</a>
+          <a href="#contact-us" data-nav-link>Contact</a>
         </div>
-        <!-- about-section -->
-        <div id="about">
-            <div class="container">
-                <div class="img">
-                    <img src="images/my.jpg" alt="Profile Image">
-                </div>
-                <div class="info">
-                    <h1 id="primary-heading">
-                        About
-                        <span id="me">me</span>
-                    </h1>
-                    <p>
-                        Welcome to my portfolio! I am a passionate software engineer with a strong foundation in programming languages such as Java, Python, 
-                    C++. 
-                    I specialize in web development (HTML, CSS, JavaScript), database management (DBMS, SQL, MySQL), and version control (Git, GitHub). 
-                    My ambition for machine learning, proficiency with the Django framework, and strong problem-solving skills make me a valuable asset.
-                    Let's connect and explore how I can contribute to organizational growth.
-                    </p>
-                    <p>
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="https://www.linkedin.com/in/pranav-mandani-5668a61ab/" class="fa fa-linkedin" target="_blank"></a>
-                        <a href="pranavmandani20@gmail.com" class="fa fa-instagram"></a>
-                        <a href="https://github.com/Pranav2022" target="_blank" class="fa fa-github"></a>
-                        <a href="#" class="fa fa-snapchat-ghost"></a>
-                    </p>
-                    <!-- this is it -->
-                </div>
-            </div>
+      </nav>
+
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Software Engineer | Pune, Maharashtra, India</p>
+          <h1 id="hero-title">
+            Building reliable backend systems, APIs, and modern web
+            applications.
+          </h1>
+          <p class="hero-copy">
+            I work across backend and frontend delivery with a strong
+            engineering focus on Java, Spring Boot, REST API development, SQL,
+            and AWS-powered products.
+          </p>
+          <p class="tech-ribbon" aria-label="Primary technologies">
+            Java <span aria-hidden="true">•</span> Spring Boot
+            <span aria-hidden="true">•</span> REST APIs
+            <span aria-hidden="true">•</span> SQL
+            <span aria-hidden="true">•</span> AWS
+            <span aria-hidden="true">•</span> Vue.js
+          </p>
+          <div class="hero-cta-row">
+            <a class="btn btn-primary" href="#experience">View Experience</a>
+            <a class="btn btn-secondary" href="#projects">Explore Projects</a>
+            <a
+              class="btn btn-ghost"
+              href="https://github.com/Pranav2022"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+            <a
+              class="btn btn-ghost"
+              href="https://www.linkedin.com/in/pranav-mandani-5668a61ab/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+            <a class="btn btn-ghost" href="#contact-us">Contact Me</a>
+          </div>
         </div>
-        <div class="summary-container">
-            <!-- <h1>Summary</h1> -->
-            <div class="summary-cards-container">
-                <div class="summary-card">
-                    <div class="summary-content">
-                        <h2 class="summary-title">Projects</h2>
-                        <p class="summary-number">10+</p>
-                        <p class="summary-label">Completed</p>
-                    </div>
-                </div>
-                <div class="summary-card">
-                    <div class="summary-content">
-                        <h2 class="summary-title">Certifications</h2>
-                        <p class="summary-number">10+</p>
-                        <p class="summary-label">Earned</p>
-                    </div>
-                </div>
-                <div class="summary-card">
-                    <div class="summary-content">
-                        <h2 class="summary-title">Experience</h2>
-                        <p class="summary-number">2</p>
-                        <p class="summary-label">Years</p>
-                    </div>
-                </div>
+
+        <div class="hero-visual" aria-label="System architecture visual">
+          <div
+            class="code-panel"
+            role="img"
+            aria-label="API request flow snippet"
+          >
+            <div class="panel-header">
+              <span></span><span></span><span></span>
+              <p>request-flow.java</p>
             </div>
+            <div class="panel-lines">
+              <p><span class="line-no">1</span>POST /templates/export</p>
+              <p><span class="line-no">2</span>Gateway -> Lambda -> DynamoDB</p>
+              <p><span class="line-no">3</span>validate(payload)</p>
+              <p><span class="line-no">4</span>saveTemplate(config)</p>
+              <p><span class="line-no">5</span>queueVideoExport()</p>
+              <p><span class="line-no">6</span>return creditsSummary</p>
+            </div>
+          </div>
+          <div class="flow-strip" aria-hidden="true">
+            <div>Client</div>
+            <div>API</div>
+            <div>Service</div>
+            <div>Data</div>
+          </div>
         </div>
-        <div id="experience">
-            <div class="section-heading">
-                <h2>Experience</h2>
-                <hr>
-            </div>
-            <div class="experience-item">
-                <div class="experience-details">
-                    <h3>Student Intern</h3>
-                    <p class="company">Persistent Systems</p>
-                    <p class="date">July 2022 - August 2022</p>
-                </div>
-                <p class="experience-description">
-                    During the Martian Internship Program 2022 at Persistent Systems in Pune, India, I showcased exceptional coding abilities through active participation in coding competitions. This experience provided invaluable practical exposure to key areas of computer science, including programming, operating systems, computer networks, and DBMS, highlighting my innovative problem-solving skills and ability to thrive under pressure.
-                </p>
-            </div>
-            <div class="experience-item">
-                <div class="experience-details">
-                    <h3>Web Developer Intern</h3>
-                    <p class="company">Oasis Infobyte</p>
-                    <p class="date">January 2022 - Feburary 2022</p>
-                </div>
-                <p class="experience-description">
-                    Worked on cutting-edge projects, collaborating with cross-functional teams to deliver high-quality software solutions. Led the development of key features, improving system performance and user experience.
-                </p>
-            </div>
-            <div class="experience-item">
-                <div class="experience-details">
-                    <h3>Data Science and Bussiness Analytics</h3>
-                    <p class="company">The Sparks Foundation</p>
-                    <p class="date">Feburary 2022 - March 2022</p>
-                </div>
-                <p class="experience-description">
-                    As a Data Science Intern at The Sparks Foundation, I played a crucial role in the data collection and cleaning process, utilizing SQL queries and scripts to extract and transform data from diverse sources. Additionally, I conducted exploratory data analysis, uncovering valuable insights and identifying patterns and relationships within extensive datasets.
-                </p>
-            </div>
-            <div class="experience-item">
-                <div class="experience-details">
-                    <h3>Web Developer Intern</h3>
-                    <p class="company">The Sparks Foundation</p>
-                    <p class="date">November 2021 - December 2021</p>
-                </div>
-                <p class="experience-description">
-                    As a Web Developer Intern at The Sparks Foundation India in 2021, I led the end-to-end development and design of a charity organization's website, ensuring a seamless user experience. I adeptly integrated secure payment gateways for online donations, managed deployment using Git, and collaborated with a skilled team to enhance the website's visual appeal and functionality through CSS, HTML, JavaScript, and Bootstrap.
-                </p>
-            </div>
-            <!-- Add more experience items as needed -->
+      </section>
+    </header>
+
+    <main id="main-content">
+      <section
+        class="section-shell highlights"
+        aria-labelledby="highlights-title"
+      >
+        <div class="section-title-wrap">
+          <p class="eyebrow">Technical Highlights</p>
+          <h2 id="highlights-title">
+            Engineering work delivered in production contexts
+          </h2>
         </div>
-        <div id="skills">
-            <div class="heading-name">
-                <h1 class="secondary-heading">Specializations</h1>
-                <hr>
-                <p>Here are some areas I'm passionate about, and I have relevant skills in:</p>
-            </div>
-            <div class="skill">
-                <!-- Repeat the following skill-name structure for each skill -->
-                <div class="skill-name" id="skill-1">
-                    <div class="skill-logo" id="logo-1">
-                        <img src="/images/programming.png" alt="Web Development">
-                        <br>
-                        <h2>Web Development</h2>
-                    </div>
-                    <div class="info-1" id="info-1">
-                        <p>Passionate about creating dynamic and user-friendly web applications. Experienced in building projects that showcase a blend of creativity and functionality.Skilled in creating responsive and user-friendly web applications with expertise in HTML, CSS, and JavaScript.</p>
-                    </div>
-                </div>
-                <div class="skill-name" id="skill-2">
-                    <div class="skill-logo" id="logo-2">
-                        <img src="images/java.png" alt="Coding and Problem Solving (DSA)">
-                        <br>
-                        <h2>Coding and Problem Solving (DSA)</h2>
-                    </div>
-                    <div class="info-1" id="info-2">
-                        <p>Proficient in Python, Java, and C++. Successfully tackled complex problem-solving challenges through Data Structures and Algorithms, contributing to various projects.</p>
-                    </div>
-                </div>
-                <div class="skill-name" id="skill-3">
-                    <div class="skill-logo" id="logo-3">
-                        <img src="/images/django.png" alt="Django Framework">
-                        <br>
-                        <h2>Django Framework</h2>
-                    </div>
-                    <div class="info-1" id="info-1">
-                        <p>Developed TextUtils, a powerful data analysis tool, and an e-shopping website for seamless product purchasing. Well-versed in leveraging Django for robust backend solutions.</p>
-                    </div>
-                </div>
-                <div class="skill-name" id="skill-1">
-                    <div class="skill-logo" id="logo-1">
-                        <img src="/images/github.png" alt="Git/Github Version Control">
-                        <br>
-                        <h2>Git/Github Version Control</h2>
-                    </div>
-                    <div class="info-1" id="info-1">
-                        <p>Expertise in version control using Git and Github for efficient project management. Ensured collaboration and seamless integration of code changes in various projects.</p>
-                    </div>
-                </div>
-                <div class="skill-name" id="skill-1">
-                    <div class="skill-logo" id="logo-1">
-                        <img src="images/code.png" alt="Software Development Tools">
-                        <br>
-                        <h2>Software Development Tools</h2>
-                    </div>
-                    <div class="info-1" id="info-1">
-                        <p>Proficient in using development tools like PyCharm, VSCode, and IntelliJ IDEA for efficient coding and project development. Achieved seamless integration with industry-standard IDEs.</p>
-                    </div>
-                </div>
-                <div class="skill-name" id="skill-6">
-                    <div class="skill-logo" id="logo-1">
-                        <img src="/images/database-storage.png" alt="Database Managment Systems">
-                        <br>
-                        <h2>Database Management System</h2>
-                    </div>
-                    <div class="info-1" id="info-6">
-                        <p>Skilled in SQL and MySQL, with a certification in MariaDB from Infosys. Managed databases effectively, ensuring data integrity and optimal performance.</p>
-                    </div>
-                </div>
-                <div class="skill-name" id="skill-6">
-                    <div class="skill-logo" id="logo-1">
-                        <img src="images/coding.png" alt="Machine Learning">
-                        <br>
-                        <h2>Machine Learning</h2>
-                    </div>
-                    <div class="info-1" id="info-6">
-                        <p>Explored the realms of machine learning, applying algorithms to derive meaningful insights. Contributed to projects that showcase the practical application of machine learning concepts. Experience in developing and implementing machine learning models for predictive analytics and pattern recognition.</p>
-                    </div>
-                </div>
-                <div class="skill-name" id="skill-6">
-                    <div class="skill-logo" id="logo-1">
-                        <img src="images/learning.png" alt="Data Science">
-                        <br>
-                        <h2>Data Science</h2>
-                    </div>
-                    <div class="info-1" id="info-6">
-                        <p>Engaged in data collection, cleaning, and exploratory data analysis. Gained hands-on experience in uncovering patterns and deriving insights from large datasets. Proficient in extracting valuable insights from complex datasets using advanced data analysis techniques.</p>
-                    </div>
-                </div>
-                <!-- End of skill-name structure -->
-            </div>
+        <div class="highlights-grid">
+          <article class="highlight-card reveal-item">
+            <h3>Backend Modernization</h3>
+            <p>Legacy Java systems migrated toward Spring Boot architecture.</p>
+          </article>
+          <article class="highlight-card reveal-item">
+            <h3>API Engineering</h3>
+            <p>
+              REST API development and integration across multiple applications.
+            </p>
+          </article>
+          <article class="highlight-card reveal-item">
+            <h3>Cloud Development</h3>
+            <p>
+              AWS Lambda, API Gateway, and DynamoDB services in application
+              backend design.
+            </p>
+          </article>
+          <article class="highlight-card reveal-item">
+            <h3>SVG Rendering</h3>
+            <p>
+              Dynamic text rendering and animation systems for interactive
+              interfaces.
+            </p>
+          </article>
+          <article class="highlight-card reveal-item">
+            <h3>Production Applications</h3>
+            <p>
+              Built and maintained real-world applications post release with
+              live updates.
+            </p>
+          </article>
+          <article class="highlight-card reveal-item">
+            <h3>Payment Integration</h3>
+            <p>
+              FastSpring checkout and payment integration in product workflows.
+            </p>
+          </article>
         </div>
-        <div id="certification" class="section">
-            <div class="section-heading">
-                <h2>Certifications</h2>
-                <hr>
-                <p>Explore my certifications earned while honing my skills.</p>
-            </div>
-            <div class="certification">
-                <!-- Repeat the following certification-name structure for each certification -->
-                <div class="certification-name" id="certificate-1">
-                    <div class="certificate-image">
-                        <img src="Certificate/JavaProgramming.PNG" alt="Programming for everybody">
-                    </div>
-                    <div class="certificate-info">
-                        <p>Java Certification</p>
-                    </div>
-                </div>
-                <div class="certification-name" id="certificate-1">
-                    <div class="certificate-image">
-                        <img src="Certificate/PythonT.JPG" alt="Programming for everybody">
-                    </div>
-                    <div class="certificate-info">
-                        <p>Python Training</p>
-                    </div>
-                </div>
-                <div class="certification-name" id="certificate-1">
-                    <div class="certificate-image">
-                        <img src="Certificate/MySQL.JPG" alt="Programming for everybody">
-                    </div>
-                    <div class="certificate-info">
-                        <p>MySQL and PHP  Training</p>
-                    </div>
-                </div>
-                <div class="certification-name" id="certificate-1">
-                    <div class="certificate-image">
-                        <img src="Certificate/PostgreSQL.JPG" alt="Programming for everybody">
-                    </div>
-                    <div class="certificate-info">
-                        <p>PostgreSQL Training</p>
-                    </div>
-                </div>
-                <div class="certification-name" id="certificate-2">
-                    <div class="certificate-image">
-                        <img src="Certificate/advance_cpp.PNG" alt="advance_cpp">
-                    </div>
-                    <div class="certificate-info">
-                        <p>advance_cpp</p>
-                    </div>
-                </div>
-                <div class="certification-name" id="certificate-1">
-                    <div class="certificate-image">
-                        <img src="Certificate/Ruby.JPG" alt="Programming for everybody">
-                    </div>
-                    <div class="certificate-info">
-                        <p>Ruby Training</p>
-                    </div>
-                </div>
-                <div class="certification-name" id="certificate-1">
-                    <div class="certificate-image">
-                        <img src="Certificate/RTraining.JPG" alt="Programming for everybody">
-                    </div>
-                    <div class="certificate-info">
-                        <p>R Training</p>
-                    </div>
-                </div>
-                <div class="certification-name" id="certificate-1">
-                    <div class="certificate-image">
-                        <img src="Certificate/CyberSecurity.JPG" alt="Programming for everybody">
-                    </div>
-                    <div class="certificate-info">
-                        <p>Cyber Security by Cisco</p>
-                    </div>
-                </div>
-                <div class="certification-name" id="certificate-3">
-                    <div class="certificate-image">
-                        <img src="Certificate/DB_operation_usingPython.PNG" alt="DB_operation_usingPython">
-                    </div>
-                    <div class="certificate-info">
-                        <p>DB_operation_usingPython</p>
-                    </div>
-                </div>
-                <div class="certification-name" id="certificate-4">
-                    <div class="certificate-image">
-                        <img src="Certificate/googleCloud.PNG" alt="googleCloud">
-                    </div>
-                    <div class="certificate-info">
-                        <p>googleCloud</p>
-                    </div>
-                </div>
-                <div class="certification-name" id="certificate-5">
-                    <div class="certificate-image">
-                        <img src="Certificate/Introduction_To_Ai.PNG" alt="Introduction_To_Ai">
-                    </div>
-                    <div class="certificate-info">
-                        <p>Introduction_To_Ai</p>
-                    </div>
-                </div>
-                <div class="certification-name" id="certificate-6">
-                    <div class="certificate-image">
-                        <img src="Certificate/Introduction_to_ds.PNG" alt="Introduction_to_ds">
-                    </div>
-                    <div class="certificate-info">
-                        <p>Introduction_to_ds</p>
-                    </div>
-                </div>
-                <div class="certification-name" id="certificate-7">
-                    <div class="certificate-image">
-                        <img src="Certificate/Latex_certificate.PNG" alt="Latex_certificate">
-                    </div>
-                    <div class="certificate-info">
-                        <p>Latex_certificate</p>
-                    </div>
-                </div>
-                <div class="certification-name" id="certificate-8">
-                    <div class="certificate-image">
-                        <img src="Certificate/matlab_certificate.PNG" alt="matlab_certificate">
-                    </div>
-                    <div class="certificate-info">
-                        <p>matlab_certificate</p>
-                    </div>
-                </div>
-                <div class="certification-name" id="certificate-9">
-                    <div class="certificate-image">
-                        <img src="Certificate/MLandIP.PNG" alt="Machine-Learning">
-                    </div>
-                    <div class="certificate-info">
-                        <p>Machine-Learning and Image-Proocessing</p>
-                    </div>
-                </div>
-                <div class="certification-name" id="certificate-9">
-                    <div class="certificate-image">
-                        <img src="Certificate/Programming_fundamentals.PNG" alt="Programming_fundamentals">
-                    </div>
-                    <div class="certificate-info">
-                        <p>Programming_fundamentals</p>
-                    </div>
-                </div>
-                <div class="certification-name" id="certificate-9">
-                    <div class="certificate-image">
-                        <img src="Certificate/train_india.PNG" alt="train_india">
-                    </div>
-                    <div class="certificate-info">
-                        <p>train_India</p>
-                    </div>
-                </div>
-                <div class="certification-name" id="certificate-1">
-                    <div class="certificate-image">
-                        <img src="Certificate/Capture.PNG" alt="Programming for everybody">
-                    </div>
-                    <div class="certificate-info">
-                        <p>Programming for everybody(Python)</p>
-                    </div>
-                </div>
-                <!-- End of certification-name structure -->
-            </div>
+      </section>
+
+      <section
+        class="section-shell about"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="about-media reveal-item">
+          <img
+            src="images/my.jpg"
+            alt="Portrait of Pranav Mandani"
+            loading="lazy"
+          />
         </div>
-        <div id="contact-us">
-            <div class="heading-name" id="heading">
-                <h1 class="secondary-name">Contact-me</h1>
-                <hr>
-                <p>Feel free to reach out. I'd love to connect with you!</p>
-            </div>
-            <div class="persional-details">
-                
-                <div class="connection">
-                    <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/in/pranav-mandani-5668a61ab/" target="_blank">LinkedIn</a>
-                        </li>
-                       
-                        <li>
-                            <a href="https://github.com/Pranav2022" target="_blank">Github</a>
-                        </li>
-                    </ul>
-                    <p>send me an email at</p>
-                    <p class="para">
-                        <a href="mailto:pranavmandani20@gmail.com" id="link">pranavmandani20@gmail.com</a>
-                    </p>
-                    <p>Let's talk</p>
-                </div>
-                
-                <div class="img1">
-                    <img src="images/images.jpg" alt="" srcset="">
-                </div>
-                
-            </div>
+        <div class="about-copy">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">
+            Software Engineer focused on backend reliability and end-to-end
+            delivery
+          </h2>
+          <p>
+            I build and maintain production applications with strong ownership
+            across design, implementation, deployment, and support. My core
+            direction is backend and API engineering with Java and Spring Boot,
+            while remaining comfortable shipping modern frontend experiences
+            where product quality and system behavior must align.
+          </p>
+          <p>
+            My recent work includes backend modernization, REST APIs,
+            database-centric systems, AWS services, animation/rendering systems,
+            payment integrations, and complete product workflows from feature
+            idea to stable production release.
+          </p>
+          <div class="about-pills" aria-label="Specialization areas">
+            <span>Java & Spring Boot</span>
+            <span>REST API Development</span>
+            <span>SQL & Databases</span>
+            <span>AWS Services</span>
+            <span>Frontend Delivery</span>
+            <span>Production Support</span>
+          </div>
         </div>
-        <div id="footer">
-            <div class="links">
-                <p>
-                    <a href="https://www.linkedin.com/in/pranav-mandani-5668a61ab/" class="fa fa-linkedin" target="_blank"></a>
-                    <a href="pranavmandani20@gmail.com" class="fa fa-instagram"></a>
-                    <a href="https://github.com/Pranav2022" target="_blank" class="fa fa-github"></a>
-                    <a href="#" class="fa fa-snapchat-ghost"></a>
-                </p>
-            </div>
-            <div class="footer-info">
-                <p>
-                    &copy; Portfolio Website | Designed with
-                    <span id="heart">&hearts;</span>
-                    by Pranav Mandani
-                </p>
-            </div>
+      </section>
+
+      <section
+        class="section-shell experience"
+        id="experience"
+        aria-labelledby="experience-title"
+      >
+        <div class="section-title-wrap">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">Professional timeline</h2>
         </div>
-        <script src="js/script.js"></script>
-    </body>
+
+        <div class="timeline" role="list" aria-label="Experience timeline">
+          <article class="timeline-item reveal-item featured" role="listitem">
+            <button class="timeline-head" type="button" aria-expanded="true">
+              <span class="timeline-role">Software Engineer</span>
+              <span class="timeline-company">TextMover Labs LLC — Pune</span>
+              <span class="timeline-duration">July 2024 - June 2026</span>
+            </button>
+            <div class="timeline-body">
+              <div class="tag-row">
+                <span>Vue.js</span><span>JavaScript</span><span>SVG</span
+                ><span>Production Deployment</span>
+              </div>
+              <ul>
+                <li>
+                  Built the front end of a production text-animation application
+                  using Vue.js and JavaScript, owning design, development,
+                  deployment, and post-release support.
+                </li>
+                <li>
+                  Designed and implemented SVG-based rendering and animation
+                  systems, including typewriter, handwriting, markdown, and
+                  reveal-style animation modes.
+                </li>
+                <li>
+                  Engineered responsive, multi-line SVG rendering with dynamic
+                  viewBox calculations to improve layout reliability across
+                  screen sizes.
+                </li>
+                <li>
+                  Built interactive tooling, including typography controls,
+                  animation timing, and customization panels, to extend the
+                  application's feature set.
+                </li>
+                <li>
+                  Debugged and resolved animation synchronization and
+                  text-rendering issues across devices, improving frontend
+                  stability.
+                </li>
+                <li>
+                  Deployed application updates to a live beta production
+                  environment and maintained the system with minimal supervision
+                  after release.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal-item" role="listitem">
+            <button class="timeline-head" type="button" aria-expanded="false">
+              <span class="timeline-role">Software Engineer (Contract)</span>
+              <span class="timeline-company">FastSpring — Pune</span>
+              <span class="timeline-duration">March 2025 - April 2026</span>
+            </button>
+            <div class="timeline-body">
+              <div class="tag-row">
+                <span>Java</span><span>Spring Boot</span><span>REST APIs</span
+                ><span>E-commerce</span>
+              </div>
+              <ul>
+                <li>
+                  Ported multiple legacy systems to Java Spring Boot as part of
+                  a backend modernization effort for an online e-commerce
+                  payments platform.
+                </li>
+                <li>
+                  Developed and integrated REST APIs to support e-commerce
+                  integrations across multiple frameworks.
+                </li>
+                <li>
+                  Built an API-based backend to support UI/UX modernization of
+                  an existing frontend application.
+                </li>
+                <li>
+                  Created reusable sample systems and integration patterns that
+                  were adopted by other engineering teams at FastSpring.
+                </li>
+                <li>
+                  Worked within a large, established Java codebase, coordinating
+                  backend changes with existing enterprise systems.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal-item" role="listitem">
+            <button class="timeline-head" type="button" aria-expanded="false">
+              <span class="timeline-role">Developer</span>
+              <span class="timeline-company">Techsolve / MVD-Tech — Pune</span>
+              <span class="timeline-duration">Jan 2023 - Sept 2024</span>
+            </button>
+            <div class="timeline-body">
+              <div class="tag-row">
+                <span>SQL</span><span>Inventory System</span
+                ><span>Team Collaboration</span><span>Mentoring</span>
+              </div>
+              <ul>
+                <li>
+                  Collaborated with a team of 7 developers across the full
+                  software development lifecycle, achieving 95% on-time
+                  delivery.
+                </li>
+                <li>
+                  Built a database-centric inventory management system for a tea
+                  distribution business, improving operational efficiency by 40%
+                  and reducing data discrepancies by 25%.
+                </li>
+                <li>
+                  Optimized SQL queries, improving average response time by 30%.
+                </li>
+                <li>
+                  Mentored 5 junior developers and contributed to a dynamic form
+                  system, improving data accuracy by 20% and reducing errors by
+                  15%.
+                </li>
+                <li>
+                  Created and maintained technical documentation to support
+                  knowledge transfer across the team.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="section-shell project"
+        id="projects"
+        aria-labelledby="project-title"
+      >
+        <div class="section-title-wrap">
+          <p class="eyebrow">Featured Project</p>
+          <h2 id="project-title">TextMover</h2>
+          <p class="section-subtitle">
+            A web-based application for creating animated text content and
+            exporting it as videos.
+          </p>
+        </div>
+
+        <div class="project-shell reveal-item">
+          <div class="project-intro">
+            <h3>Engineering contribution</h3>
+            <p>
+              Built key frontend and backend features across animation systems,
+              template management, credits usage, video export flows, and
+              payment-enabled product workflows.
+            </p>
+            <div class="tag-row">
+              <span>Vue.js</span><span>Vuetify</span><span>AWS Lambda</span
+              ><span>API Gateway</span><span>DynamoDB</span
+              ><span>JavaScript</span><span>SVG</span>
+            </div>
+          </div>
+
+          <div class="architecture-grid">
+            <article class="arch-card" aria-labelledby="arch1">
+              <h4 id="arch1">Service architecture</h4>
+              <div
+                class="arch-flow"
+                id="infra-flow"
+                aria-label="Vue.js UI to DynamoDB architecture"
+              >
+                <div>Vue.js UI</div>
+                <span class="arrow" aria-hidden="true">↓</span>
+                <div>API Gateway</div>
+                <span class="arrow" aria-hidden="true">↓</span>
+                <div>AWS Lambda</div>
+                <span class="arrow" aria-hidden="true">↓</span>
+                <div>DynamoDB</div>
+              </div>
+            </article>
+
+            <article class="arch-card" aria-labelledby="arch2">
+              <h4 id="arch2">Product workflow</h4>
+              <div class="arch-flow" aria-label="User workflow architecture">
+                <div>User</div>
+                <span class="arrow" aria-hidden="true">→</span>
+                <div>Text Animation Editor</div>
+                <span class="arrow" aria-hidden="true">→</span>
+                <div>Template System</div>
+                <span class="arrow" aria-hidden="true">→</span>
+                <div>Video Export</div>
+                <span class="arrow" aria-hidden="true">→</span>
+                <div>Credits / Payment</div>
+              </div>
+            </article>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h4>Animation Systems</h4>
+              <p>
+                Text Reveal, Outline, Console, Typewriter, Markdown, Messaging,
+                Handwriting.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h4>Styling & Configuration</h4>
+              <p>
+                Font, size, color, background, spacing, animation settings, and
+                related controls.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h4>Template Management</h4>
+              <p>
+                Create, update, delete, and reuse templates with stored
+                animation config and type.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h4>Backend APIs</h4>
+              <p>
+                AWS Lambda + API Gateway APIs with DynamoDB for templates and
+                application data.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h4>Credits & Video Export</h4>
+              <p>
+                Credits consumption logic tied to feature usage and export
+                capabilities.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h4>Payments</h4>
+              <p>FastSpring checkout and payment integration support.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-shell skills"
+        id="skills"
+        aria-labelledby="skills-title"
+      >
+        <div class="section-title-wrap">
+          <p class="eyebrow">Technical Skills</p>
+          <h2 id="skills-title">Technology clusters</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-cluster reveal-item">
+            <h3>Backend</h3>
+            <p>
+              Java, Spring Boot, REST APIs, API Development, Object-Oriented
+              Programming
+            </p>
+          </article>
+          <article class="skill-cluster reveal-item">
+            <h3>Databases</h3>
+            <p>PostgreSQL, MySQL, SQL, DynamoDB</p>
+          </article>
+          <article class="skill-cluster reveal-item">
+            <h3>Cloud</h3>
+            <p>AWS, AWS Lambda, API Gateway</p>
+          </article>
+          <article class="skill-cluster reveal-item">
+            <h3>Frontend</h3>
+            <p>
+              Vue.js, JavaScript, HTML5, CSS3, SVG, Responsive Design, Vuetify
+            </p>
+          </article>
+          <article class="skill-cluster reveal-item">
+            <h3>Tools</h3>
+            <p>Git, GitHub, VS Code, Postman</p>
+          </article>
+          <article class="skill-cluster reveal-item">
+            <h3>Other</h3>
+            <p>Python</p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="section-shell philosophy"
+        aria-labelledby="philosophy-title"
+      >
+        <div class="section-title-wrap">
+          <p class="eyebrow">Engineering Approach</p>
+          <h2 id="philosophy-title">Build -> Understand -> Improve -> Ship</h2>
+        </div>
+        <div class="principles reveal-item">
+          <p>
+            Clean architecture and maintainable code over short-term shortcuts.
+          </p>
+          <p>
+            API design and data modeling that support long-term product
+            evolution.
+          </p>
+          <p>
+            Debugging and performance work backed by observation, not
+            assumptions.
+          </p>
+          <p>
+            Reusable components and production reliability as delivery
+            standards.
+          </p>
+          <p>
+            Continuous learning through practical implementation and system
+            ownership.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="section-shell certifications"
+        id="certification"
+        aria-labelledby="cert-title"
+      >
+        <div class="section-title-wrap">
+          <p class="eyebrow">Certifications</p>
+          <h2 id="cert-title">Verified certificate assets from repository</h2>
+          <p class="section-subtitle">
+            Spring Boot certificate included and prioritized.
+          </p>
+        </div>
+        <div class="cert-grid" id="cert-grid" aria-live="polite"></div>
+      </section>
+
+      <section
+        class="section-shell education"
+        id="education"
+        aria-labelledby="education-title"
+      >
+        <div class="section-title-wrap">
+          <p class="eyebrow">Education</p>
+          <h2 id="education-title">
+            MES College of Engineering - Pune, Maharashtra
+          </h2>
+        </div>
+        <article class="edu-card reveal-item">
+          <h3>Bachelor of Engineering (Computer)</h3>
+          <p>CGPA: 8.48</p>
+          <p>Aug 2019 - Jun 2023</p>
+        </article>
+      </section>
+
+      <section class="section-shell github" aria-labelledby="github-title">
+        <div class="section-title-wrap">
+          <p class="eyebrow">GitHub</p>
+          <h2 id="github-title">Selected repositories</h2>
+          <p class="section-subtitle">
+            Curated links from existing portfolio repository content.
+          </p>
+        </div>
+        <div class="repo-grid">
+          <a
+            class="repo-card reveal-item"
+            href="https://github.com/Pranav2022/Latex-Code-to-SVG-Images-with-Effective-Animation"
+            target="_blank"
+            rel="noopener"
+          >
+            <h3>Latex Code to SVG Images with Effective Animation</h3>
+            <p>
+              Animation-heavy engineering work around SVG rendering and
+              sequencing.
+            </p>
+          </a>
+          <a
+            class="repo-card reveal-item"
+            href="https://github.com/Pranav2022/textUtils"
+            target="_blank"
+            rel="noopener"
+          >
+            <h3>TextUtils</h3>
+            <p>
+              Text processing utilities built as an application-focused project.
+            </p>
+          </a>
+          <a
+            class="repo-card reveal-item"
+            href="https://github.com/Pranav2022/Obstructive-Sleep-Apnea"
+            target="_blank"
+            rel="noopener"
+          >
+            <h3>Obstructive Sleep Apnea</h3>
+            <p>
+              Collaborative project combining application development and
+              analytics.
+            </p>
+          </a>
+          <a
+            class="repo-card reveal-item"
+            href="https://github.com/Pranav2022/Krishi1"
+            target="_blank"
+            rel="noopener"
+          >
+            <h3>Krishi</h3>
+            <p>Platform-oriented project for agricultural product workflows.</p>
+          </a>
+        </div>
+        <div class="github-actions">
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/Pranav2022"
+            target="_blank"
+            rel="noopener"
+            >View GitHub Profile</a
+          >
+          <a class="btn btn-ghost" href="projects.html"
+            >Legacy Project Archive</a
+          >
+        </div>
+      </section>
+
+      <section
+        class="section-shell contact"
+        id="contact-us"
+        aria-labelledby="contact-title"
+      >
+        <div class="section-title-wrap">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let's build something useful.</h2>
+        </div>
+        <div class="contact-card reveal-item">
+          <p>
+            Email:
+            <a href="mailto:pranavmandani20@gmail.com"
+              >pranavmandani20@gmail.com</a
+            >
+          </p>
+          <p>
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/pranav-mandani-5668a61ab/"
+              target="_blank"
+              rel="noopener"
+            >
+              pranav-mandani-5668a61ab
+            </a>
+          </p>
+          <p>
+            GitHub:
+            <a
+              href="https://github.com/Pranav2022"
+              target="_blank"
+              rel="noopener"
+              >Pranav2022</a
+            >
+          </p>
+          <p>
+            Phone:
+            <a href="tel:+919922325701">+91 99223 25701</a>
+          </p>
+          <p>
+            Portfolio:
+            <a
+              href="https://pranav2022.github.io/Pranav2025-Portfolio.github.io/"
+              target="_blank"
+              rel="noopener"
+            >
+              pranav2022.github.io
+            </a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Pranav Mandani. Software Engineer.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
