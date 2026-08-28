@@ -360,6 +360,13 @@ function setFooterYear() {
     }
 }
 
+function setupHomeFab() {
+    const homeFab = document.getElementById("home-fab");
+    if (!homeFab) {
+        return;
+    }
+}
+
 function setupProjectSliderCompatibility() {
     const slides = document.getElementsByClassName("slide");
     if (!slides.length) {
@@ -398,6 +405,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setupReveal();
     setupTimelineAccordion();
     setupInfraFlowAnimation();
+    setupHomeFab();
     setFooterYear();
     setupProjectSliderCompatibility();
 });
